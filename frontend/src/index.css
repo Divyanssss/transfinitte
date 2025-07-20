@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@400&display=swap');
+
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  overflow-x: hidden;
+}
+
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-bitcount-grid-single {
+  font-family: 'Bitcount Grid Single', monospace;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+.logos img {
+
+  width: 10rem;
+  height: auto;
+  margin: 2rem 2rem ;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-7 * (10rem + 4rem)));
+  }
+}
+
+.logos {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.logos:hover .slide-animation {
+  animation-play-state: paused;
+}
+
+.slide-animation {
+  animation: slide 23s linear infinite;
+  display: flex;
+  width: max-content;
+}
+.logos:before{
+  position:absolute;
+  content: "";
+  width:12rem;
+  height: 100%;
+  background: linear-gradient(to left, transparent, #000000);
+
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.logos:after{
+  position:absolute;
+  content: "";
+  width:12rem;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #000000);
+
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
