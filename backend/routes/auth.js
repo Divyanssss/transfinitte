@@ -37,17 +37,23 @@ router.post("/signup", async (req, res) => {
       },
     });
 
+  
+
     if (error) {
-      return res.status(400).json({ error:error.message });
+      return res.status(400).json({ error: error.message });
     } else {
       return res
         .status(200)
-        .json({ message: "Check your email to confirm your signup" });
+        .json({ 
+         
+          user: data.user 
+        });
     }
   } catch (error) {
     console.error("Signup error:", error);
+    
     res.status(500).json({
-      error: "Internal server error",
+      error: "Database error saving a new user: " + error.message,
     });
   }
 });
@@ -75,7 +81,8 @@ router.post("/signin", async (req, res) => {
 
     res.status(200).json({
       message: "Login successful",
-     
+      user: data.user,
+      session: data.session
     });
   } catch (error) {
     console.error("Signin error:", error);

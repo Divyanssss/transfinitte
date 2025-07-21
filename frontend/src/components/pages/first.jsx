@@ -2,21 +2,24 @@ import React from 'react';
 
 const First = () => {
   return (
-    <div className="px-4 sm:px-7 py-40">
+    <div className="px-4 sm:px-7 py-30">
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16 max-w-7xl mx-auto">
 
   
         <div className="flex flex-col lg:flex-1 items-center lg:items-start text-center lg:text-left">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white tracking-widest font-bitcount-grid-single">
+          <h1 className="font-extrabold text-white tracking-widest font-anurati" style={{ fontSize: '6rem' }}>
             TRANSFINITTE
           </h1>
 
-          <p className="text-lg text-gray-300 mt-6 lg:mt-8 max-w-md lg:max-w-2xl">
+          <p className="text-gray-300 mt-6 lg:mt-8 max-w-md lg:max-w-2xl font-b" style={{ fontSize: '1.1rem' }}>
             Welcome to TransfiNITTe'25, NIT Trichy's premier hackathon, hosted by the Technical Council and SCIENT. This is where innovation meets action.
           </p>
 
-          <p className="text-lg text-gray-300 mt-4 lg:mt-6 max-w-md lg:max-w-2xl">
+          <p className="text-gray-300 mt-2 lg:mt-2 max-w-md lg:max-w-2xl font-b" style={{ fontSize: '1.1rem' }}>
             Building on the success of TransfiNITTe'23, where 300+ participants pushed the limits in a 42-hour coding marathon, we're taking it up a notch. With 500+ participants and 100+ teams expected, TransfiNITTe'24 is set to redefine the hackathon experience.
+          </p>
+          <p className="text-gray-300 mt-2 lg:mt-2 max-w-md lg:max-w-2xl font-b" style={{ fontSize: '1.1rem' }}>
+           This isn't just a competition—it's a platform to create real solutions and make an impact. Join us, and be a part of something that truly matters.
           </p>
         </div>
 

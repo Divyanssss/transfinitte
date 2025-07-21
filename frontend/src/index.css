@@ -1,5 +1,22 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anurati:wght@400&display=swap');
+
+@font-face {
+  font-family: 'Anurati';
+  src: url('/fonts/Anurati-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B';
+  src: url('/fonts/B.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -20,10 +37,23 @@ body {
   box-sizing: border-box;
 }
 
+
 .font-bitcount-grid-single {
   font-family: 'Bitcount Grid Single', monospace;
   font-weight: 400;
   letter-spacing: 0.1em;
+}
+
+.font-anurati {
+  font-family: 'Anurati', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.font-b {
+  font-family: 'B', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.01em;
 }
 .logos img {
 
@@ -52,7 +82,7 @@ body {
 }
 
 .slide-animation {
-  animation: slide 23s linear infinite;
+  animation: slide 20s linear infinite;
   display: flex;
   width: max-content;
 }
